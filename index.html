@@ -7,6 +7,7 @@
     </head>
 <body>
 <header class="page-header">
+<div class="page-header-container">
 <img class="logo" src="images/logo.svg" width="139" height="70"alt="Логотип города СЕДОНА">
 <nav class="navigation">
 <ul class="navigation-list">
@@ -31,52 +32,58 @@
             </a>
         </li>
         <li class="navigation-item">
-            <a class="button" href="#">
+            <a class="navigation-link" href="#">
                 <span class="visually-hidden">
                 Избранное
                 </span>
             </a>
+            <span>12</span>
         </li>
         <li class="navigation-item">
             <a class="button" href="#">ХОЧУ СЮДА!</a> 
         </li>
     </ul>
     </nav>
-</header>
-<main class="main-index">
-<h1 class="visually-hidden">Добро пожаловать в город Седона!</h1>
-<div> <img src="images/welcome.svg" width="458" height="352" alt="Добро_пожаловать!">
-    <img src="images/divider.svg" width="1200" height="57" alt="Декоративная_вставка">
 </div>
+</header>
+<main class="main-container main-index">
+<div class="page-container">
+    <div class="intro">
+    <h1 class="visually-hidden">Добро пожаловать в город Седона!</h1>
+    <img src="images/welcome.svg" width="458" height="352" alt="Добро_пожаловать!">
+    <img src="images/divider.svg" width="1200" height="57" alt="Декоративная_вставка">
     <h2 class="city-intro">Седона — небольшой городок в Аризоне,<br>
         заслуживающий большего!</h2>
         <p class="advantages-intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-<section class="advantages">
+    </div>
+    <section class="advantages">
     <h2 class="visually-hidden">Преимущества</h2>
     <ul class="advantages-list">
         <li class="advantages-item">
-            <h3 class="advantages-title">Настоящий городок</h3>
-            <p class="advantages-description"> <span>№1</span> Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                <img src="images/photo-1.jpg" width="800" height="384" alt="Уютная_улочка_в_городе_Седона">
-                <ul>
-                    <li class="advantages-subitem">
+            <div class="true-city">
+                <h3 class="advantages-title">Настоящий городок</h3>
+                 <p class="advantages-description"> <span>№1</span> Седона — не аттракцион для туристов, там течёт своя жизнь</p></div>
+                 <img src="images/photo-1.jpg" width="800" height="384" alt="Уютная_улочка_в_городе_Седона">
+                <ul class="advantages-subitem-list">
+                    <li class="advantages-subitem hotel">
                         <h4 class="advantages-subitem-title">Жильё</h4>
                              <p class="advantages-subitem-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                     </li>
-                    <li class="advantages-subitem">
+                    <li class="advantages-subitem food">
                         <h4 class="advantages-subitem-title">Еда</h4>
                              <p class="advantages-subitem-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь! </p>
                     </li>
-                    <li class="advantages-subitem">
+                    <li class="advantages-subitem souvenirs">
                         <h4 class="advantages-subitem-title">Сувениры</h4>
                              <p class="advantages-subitem-description">Не только китайского, но и настоящего местного производства! </p>
                     </li>
                 </ul>
         </li>
-        <li class="advantages-item">  
+        <li class="advantages-item"> 
+            <div class="diablo-bridge"> 
         <h3 class="advantages-title">Там есть мост дьявола</h3>
-        <p class="advantages-description"> <span>№2</span> Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img src="images/photo-2.jpg" width="800" height="384" alt="Вид_на_мост_дьявола">
+        <p class="advantages-description"> <span>№2</span> Да, по нему можно пройти! Если вы осмелитесь, разумеется</p></div>
+        <img src="images/photo-2.jpg" width="800" height="384" alt="Вид_на_мост_дьявола">
         </li>
         <li class="advantages-item">  
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -91,7 +98,7 @@
             <p class="advantages-description"> <span>№5</span> Большинство едет в Гранд Каньон и толпится там</p>
         </li>
     </ul>
-</section>
+    </section>
 <section class="hotel-search">   
     <h2 class="hotel-search-title">Заинтересовались?</h2>
     <p class="hotel-search-form">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -105,6 +112,7 @@
             <button class="button-newsletter-button" type="submit">Подписаться</button>
          </form>
 </section>
+</div>
 </main>
 <footer>
     <section class="footer-social">

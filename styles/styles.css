@@ -14,7 +14,15 @@ src: url("../fonts/ptsans-700.woff2") format("woff2");
 font-display: swap;
 }
 
+html{
+    height:100%;
+}
+
 body{
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    min-height:100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     font-weight:400;
@@ -42,6 +50,28 @@ body{
     color:#000000;
     background-color:#ffffff;
 }
+
+.page-header-container{
+    display: flex;
+    flex-direction:row;
+    width: 1060px;
+    margin: 0 70px;
+}
+
+.navigation-list {
+    margin:0;
+    margin-left:30px;
+    padding:0;
+    width:500px;
+}
+
+.navigation-user {
+    margin:0;
+    margin-left:auto;
+    padding:0;
+    width:264px;
+}
+
 .navigation-link{
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
@@ -51,6 +81,15 @@ body{
     background-color:#ffffff;
     text-decoration:none;
     text-align:center;
+}
+
+.main-container{
+    flex-grow:1;
+}
+
+.page-container{
+    width:1200px;
+    margin:0 auto;
 }
 
 .main-index{
@@ -77,6 +116,10 @@ h3 {
     text-transform: uppercase; 
 }
 
+.intro img{
+    display:block;
+    margin:0 auto;
+}
 .city-intro {
     text-align:center
 }
@@ -86,23 +129,49 @@ h3 {
 }
 
 .advantages-list {
-    text-align:center;   
+    margin:0;
+    padding:0;
+    text-align:center; 
 }
-
+  
 .advantages-item {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
-}   
+    width:400px;
 
-li.advantages-item:nth-child(1),
-li.advantages-item:nth-child(2) {
-    color: #FFFFFF;
-    background-color:#83b3d3;
+}   
+li .advantages-item{
+    display:flex;
 }
 
+li.advantages-item:first-child{
+    color: #FFFFFF;
+    background-color:#FFFFFF;
+    display:flex;
+    flex-wrap:wrap;
+    width:1200px;
+}
+
+li .true-city{
+    background-color:#83b3d3;
+    width:400px;
+}
+
+li.advantages-item:nth-child(2) {
+    color: #FFFFFF;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row-reverse;
+    width:1200px;
+}
+
+li .diablo-bridge{
+    background-color:#83b3d3;
+    width:400px;
+}
 li.advantages-item:nth-child(3),
 li.advantages-item:nth-child(5) {
     background-color:rgba(131, 179, 211, 0.12);
@@ -114,6 +183,18 @@ li.advantages-item:nth-child(4) {
 
 .advantages-subitem {
     color: #333333;
+    width:400px;
+    height:384px;
+}
+
+.advantages-subitem-list{
+    display:flex;
+}
+.advantages-subitem.hotel { 
+    background-color:rgba(131, 179, 211, 0.12);
+}
+
+.advantages-subitem.souvenirs { 
     background-color:rgba(131, 179, 211, 0.12);
 }
 
@@ -133,6 +214,8 @@ li.advantages-item:nth-child(4) {
     text-align: center;
     color:#ffffff;
     background-image: url("../images/subscribe-form-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 }
 
 .button-newsletter-button {
@@ -145,7 +228,7 @@ li.advantages-item:nth-child(4) {
     text-transform:uppercase;
 }
 
-.footer-social-item {
+.footer-social-item a {
     color:#333333;
 }
 
