@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="styles/styles.css">
     </head>
 <body>
+<div class="body-container">
 <header class="page-header">
 <div class="page-header-container">
 <img class="logo" src="images/logo.svg" width="139" height="70"alt="Логотип города СЕДОНА">
@@ -48,13 +49,14 @@
 </header>
 <main class="main-container main-index">
 <div class="page-container">
-    <div class="intro">
+    <div class="intro-container">
     <h1 class="visually-hidden">Добро пожаловать в город Седона!</h1>
     <img src="images/welcome.svg" width="458" height="352" alt="Добро_пожаловать!">
-    <img src="images/divider.svg" width="1200" height="57" alt="Декоративная_вставка">
+    <div class="intro">
     <h2 class="city-intro">Седона — небольшой городок в Аризоне,<br>
         заслуживающий большего!</h2>
         <p class="advantages-intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+    </div>
     </div>
     <section class="advantages">
     <h2 class="visually-hidden">Преимущества</h2>
@@ -107,14 +109,17 @@
 <section class="newsletter">  
     <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
      <p class="newsletter-subscribtion">Только полезная информация и никакого спама,честное бойскаутское!</p>
-         <form class="subscribtion-form" action="https://echo.htmlacademy.ru/" method="post">  
+     
+         <form class="subscribtion-form" action="https://echo.htmlacademy.ru/" method="post"> 
+            <div class="subscription-form-container">
             <input class="field" type="email" name="newsletter-email" placeholder="Ваш e-mail">
-            <button class="button-newsletter-button" type="submit">Подписаться</button>
+            <button class="button-newsletter-button" type="submit">Подписаться</button></div> 
          </form>
 </section>
 </div>
 </main>
 <footer>
+    <div class="footer-container">
     <section class="footer-social">
      <h2 class="visually-hidden">Соцсети</h2>
      <ul class="footer-social-list">
@@ -142,7 +147,9 @@
     <a href="https://htmlacademy.ru/">
     <img class="logo" src="images/htmlacademy-logo.svg" width="114.9" height="32.9" alt="Логотип html.academy"></a>
    </section>
-</footer>
+    </div>
+    </footer>
+    <div>
     </body>
 </html>
         
