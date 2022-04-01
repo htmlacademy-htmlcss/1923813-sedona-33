@@ -167,7 +167,6 @@ h3 {
     color: #333333;
     list-style:none;
     width: 400px;
-    height: 384px;
 }   
 li .advantages-item {
     display:flex;
@@ -219,7 +218,6 @@ li.advantages-item:nth-child(4) {
 .advantages-subitem {
     color: #333333;
     width:400px;
-    height:384px;
     display: flex;
     flex-direction:column;
     justify-content:center;
@@ -230,6 +228,7 @@ li.advantages-item:nth-child(4) {
     display:flex;
     margin:0;
     padding:0;
+    height:384px;
 }
 .advantages-subitem.hotel { 
     background-color:rgba(131, 179, 211, 0.12);
@@ -240,17 +239,32 @@ li.advantages-item:nth-child(4) {
 }
 
 .hotel-search {
+    display:flex;
+    flex-direction:column;
+    align-self:center;
     background-color:#FFFFFF;
     text-align: center;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
+.hotel-search-title {
+    margin-top: 91px;
+    margin-bottom: 29px;
+}
+
+.hotel-search-form {
+    margin-bottom: 56px;
+
+}
 .hotel-search .button {
     font-size: 20px;
     font-weight:700;
     line-height: 36px;
+    text-transform:uppercase;
     background-color:#756257;
     width: 575px;
+    border-radius:10px;
+    padding: 15px 0;
 }
 
 .newsletter {
